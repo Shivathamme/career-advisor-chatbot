@@ -1,54 +1,218 @@
-# 🚀 Production-Ready Career Advisor Chatbot (GenAI - Gemini API)
+# 🎓 Career Advisor Chatbot using Gemini API
 
 ## 📌 Project Overview
 
-This project is a Production-Ready Career Advisor Chatbot built using Google Gemini API and Streamlit.
+The Career Advisor Chatbot is a multi-turn conversational AI application built using Google's Gemini API, LangChain, and Streamlit.
 
-The chatbot provides:
-- Career guidance for students from all domains
-- Job role suggestions
-- Skill development advice
-- Learning roadmaps
-- Concept explanations in simple English
-- Multi-turn conversational support
+The chatbot acts as a professional career advisor and provides guidance on:
+
+* Career Planning
+* AI/ML Learning Roadmaps
+* Resume Improvement Suggestions
+* Interview Preparation
+* Skill Development Recommendations
+
+The application supports conversation memory, allowing it to remember previous interactions and provide context-aware responses.
 
 ---
 
-## 🏗️ Architecture
+## 🚀 Features
 
-User → Streamlit UI → Backend → Prompt Manager → Gemini API → Response → UI
+### Multi-Turn Conversation
+
+* Maintains conversation history using LangChain memory.
+* Provides context-aware responses.
+
+### Career Guidance
+
+* Suggests career paths based on user interests and goals.
+* Provides structured and professional advice.
+
+### AI/ML Roadmaps
+
+* Generates personalized learning roadmaps for AI, Machine Learning, Data Science, and related domains.
+
+### Resume Suggestions
+
+* Offers recommendations to improve resumes and job applications.
+
+### Interview Preparation
+
+* Helps users prepare for technical and behavioral interviews.
+
+### Streamlit User Interface
+
+* Interactive chat-style interface.
+* Real-time response rendering.
+* Conversation history display.
+* Loading indicator for better user experience.
+
+### Secure API Key Management
+
+* Gemini API key stored using environment variables.
+* Prevents exposure of sensitive credentials.
+
+### Logging and Error Handling
+
+* Logs application activities and errors.
+* Implements exception handling for improved reliability.
+
+---
+
+## 🛠️ Tech Stack
+
+### Programming Language
+
+* Python
+
+### Frameworks & Libraries
+
+* Streamlit
+* LangChain
+* LangChain Google GenAI
+* Python Dotenv
+
+### AI Model
+
+* Google Gemini 2.5 Flash Lite
 
 ---
 
 ## 📂 Project Structure
 
-backend/
-config/
-app.py
-requirements.txt
+career_chatbot/
+
+├── app.py
+
+├── chains.py
+
+├── chatbot.py
+
+├── llm.py
+
+├── logger.py
+
+├── memory.py
+
+├── prompt.py
+
+├── requirements.txt
+
+├── README.md
+
+├── .env
+
+└── chatbot.log
 
 ---
 
-## 🔐 Environment Setup
+## ⚙️ Installation
 
-1. Create virtual environment
-2. Install dependencies:
-   pip install -r requirements.txt
+### Clone Repository
 
-3. Create `.env` file:
-   GEMINI_API_KEY=your_api_key_here
+git clone <repository-url>
+
+cd career_chatbot
+
+### Create Virtual Environment
+
+python -m venv .venv
+
+### Activate Virtual Environment
+
+Windows:
+
+.venv\Scripts\activate
+
+### Install Dependencies
+
+pip install -r requirements.txt
 
 ---
 
-## ▶️ Run Application
+## 🔑 Environment Variables
+
+Create a `.env` file in the project root directory.
+
+Example:
+
+gemini_key=YOUR_GEMINI_API_KEY
+
+---
+
+## ▶️ Running the Application
+
+Start the Streamlit application:
 
 streamlit run app.py
 
+The application will open automatically in your browser.
+
 ---
 
-## 🛠️ Technologies Used
+## 💬 Example Queries
 
-- Python
-- Streamlit
-- Google Gemini API
-- Git & GitHub
+* How can I become an AI Engineer?
+* Create a Data Scientist roadmap.
+* Review my resume skills.
+* How should I prepare for technical interviews?
+* What skills should a fresher learn in 2026?
+
+---
+
+## 🧠 Architecture
+
+User
+
+↓
+
+Streamlit UI
+
+↓
+
+Chatbot Layer
+
+↓
+
+LangChain Chain
+
+↓
+
+Prompt Template
+
+↓
+
+Gemini API
+
+↓
+
+Response Generation
+
+↓
+
+Memory Update
+
+↓
+
+UI Rendering
+
+---
+
+## 📈 Future Improvements
+
+* Resume Upload and Analysis
+* PDF Report Generation
+* Retrieval-Augmented Generation (RAG)
+* User Authentication
+* Cloud Deployment
+* Career Recommendation Dashboard
+
+---
+
+## 👨‍💻 Author
+
+Shiva Kumar
+
+B.Tech (Artificial Intelligence & Data Science)
+
+Passionate about Data Science, Generative AI, Machine Learning, and AI Engineering.
