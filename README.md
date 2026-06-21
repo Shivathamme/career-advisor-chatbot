@@ -207,12 +207,3 @@ UI Rendering
 * Cloud Deployment
 * Career Recommendation Dashboard
 
----
-
-## 👨‍💻 Author
-
-Shiva Kumar
-
-B.Tech (Artificial Intelligence & Data Science)
-
-Passionate about Data Science, Generative AI, Machine Learning, and AI Engineering.
